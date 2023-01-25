@@ -1,0 +1,22 @@
+{% extends "_base.html" %}
+{% block content %}
+
+    <div class="main text-center py-4">
+        <section class="title py-4">
+            <h1>QR Code Generator, Welcome {{current_user.email}}!</h1>
+            <p>Text or URL to encode in QR code:</p>
+        </section>
+        <form action="/api/generated" method="POST" class="input-group py-4 w-75 m-auto">
+            <input type="text" id="text" name="text" class="form-control" required>
+            <button type="submit" class="btn btn-primary">Generate QR Code</button> 
+        </form>    
+    
+        {% if data %}
+        <section class="generated py-4">
+            <p>Here is your generated QR Code! You may take a screenshot to save your qr code for later!</p>
+            <img src="{{data}}" alt="qr code" class="w-25">
+        </section>
+        {% endif %}
+    </div>
+
+{% endblock %}
