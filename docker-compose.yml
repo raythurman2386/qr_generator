@@ -1,6 +1,8 @@
 services:
   webcont:
     build: .
+    container_name: qr_generator
+    command: python3 manage.py run
     volumes:
       - .:/code
     ports:
