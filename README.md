@@ -7,6 +7,7 @@ Styled utilizing Bootstrap
 `cd qr_generator`
 
 I use virtual environments for all of my python projects, to create a venv inside of the project before installing deps, run:
+Virtualenv will need to be installed on your machine as well as obviously Python 3
 
 `python -m venv venv`
 

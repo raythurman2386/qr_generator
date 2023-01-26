@@ -1,0 +1,8 @@
+services:
+  webcont:
+    build: .
+    volumes:
+      - .:/code
+    ports:
+      - 5001:5000
+    
