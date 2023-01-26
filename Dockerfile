@@ -6,6 +6,8 @@ WORKDIR /code
 # Set initial env's
 ENV FLASK_APP=api
 ENV FLASK_RUN_HOST=0.0.0.0
+ENV APP_SETTINGS=config.ProductionConfig
+ENV FLASK_DEBUG=0
 
 # install dependencies
 COPY ./requirements.txt ./requirements.txt
