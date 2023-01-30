@@ -1,6 +1,14 @@
 # Flask QR Code Generator
 
-This is designed to be a free qr code generator with basic authentication
+This is designed to be a free qr code generator with basic authentication. Once registered and logged in you are presented with an input for your URL or text to encode into a QR Code.
+
+Once encoding is complete, the app displays the QR code for the user to currently take a screenshot and save the QR Code for later use.
+
+Future plans:
+    - Ability to download QR Code directly
+    - Ability to save QR codes to DB (Upgrade to PGSQL)
+    - Fully deploy
+    - Fix tests 
 
 Styled utilizing Bootstrap
 
